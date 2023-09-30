@@ -1,6 +1,6 @@
 pub fn main() {
-  hello()
+  sm()
 }
 
-@external(javascript, "./ffi_hello.ts", "hello")
-fn hello() -> Nil
+@external(javascript, "./ffi_drizzle_demo.js", "sm")
+fn sm() -> Nil

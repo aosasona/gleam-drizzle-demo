@@ -5,7 +5,8 @@
   "author": "Ayodeji O <97124713+aosasona@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "watchexec -r -e toml,gleam,mts,ts gleam run",
+    "start": "tsc && gleam run",
+    "dev": "watchexec -r -e toml,gleam,mts,ts yarn start",
     "generate": "drizzle-kit generate:sqlite"
   },
   "dependencies": {

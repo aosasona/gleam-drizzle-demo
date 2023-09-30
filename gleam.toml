@@ -12,9 +12,10 @@ target = "javascript"
 
 [dependencies]
 gleam_stdlib = "~> 0.31"
+gleam_http = "~> 3.5"
 
 [dev-dependencies]
 gleeunit = "~> 0.10"
 
 [javascript]
-runtime = "deno"
+runtime = "node"
