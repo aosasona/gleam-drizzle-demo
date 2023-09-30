@@ -1,6 +1,6 @@
 pub fn main() {
-  sm()
+  todo
 }
 
-@external(javascript, "./ffi_drizzle_demo.js", "sm")
-fn sm() -> Nil
+@external(javascript, "./ffi_drizzle_demo.mjs", "runServer")
+fn run_server() -> Nil
