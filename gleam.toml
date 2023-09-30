@@ -11,11 +11,10 @@ target = "javascript"
 # links = [{ title = "Website", href = "https://gleam.run" }]
 
 [dependencies]
-gleam_stdlib = "~> 0.30"
+gleam_stdlib = "~> 0.31"
 
 [dev-dependencies]
 gleeunit = "~> 0.10"
 
 [javascript]
-typescript_declarations = true
-runtime = "node"
+runtime = "deno"

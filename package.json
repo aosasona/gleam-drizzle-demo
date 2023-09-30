@@ -1,10 +1,13 @@
 {
   "name": "drizzle_demo",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "git@github.com:aosasona/gleam-drizzle-demo.git",
   "author": "Ayodeji O <97124713+aosasona@users.noreply.github.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "watchexec -r -e toml,gleam,mts,ts tsc && gleam run",
+    "generate": "drizzle-kit generate:sqlite"
+  },
   "dependencies": {
     "better-sqlite3": "^8.6.0",
     "drizzle-orm": "^0.28.6"
