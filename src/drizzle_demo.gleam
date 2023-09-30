@@ -1,5 +1,6 @@
-import gleam/io
-
 pub fn main() {
-  io.println("Hello from drizzle_demo!")
+  hello()
 }
+
+@external(javascript, "./ffi_hello.mjs", "hello")
+fn hello() -> Nil
